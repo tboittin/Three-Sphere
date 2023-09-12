@@ -6,7 +6,12 @@
     <title>Three.js Sphere</title>
   </head>
   <body>
+    <div>Threejs Sphere</div>
     <div id="three-output"></div>
-    <script src="index.js"></script>
+    <script type="module">
+      import * as THREE from 'https://jspm.dev/three';
+      window.THREE = THREE;
+    </script>
+    <script type="module" src="index.js"></script>
   </body>
 </html>
